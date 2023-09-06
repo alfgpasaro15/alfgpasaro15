@@ -1,0 +1,35 @@
+> library(readxl)
+> ESTADISTICAS_LA_LIGA_2022_2023 <- read_excel("Desktop/GESTION DEPORTIVA/TFM/ESTADISTICAS LA LIGA 2022:2023.xls")
+> View(ESTADISTICAS_LA_LIGA_2022_2023)                                         
+> library(readxl)
+> View(ESTADISTICAS_LA_LIGA_2022_2023)
+> library(readxl)
+> ESTADISTICAS_LA_LIGA_2022_2023 <- read_excel("Desktop/GESTION DEPORTIVA/TFM/ESTADISTICAS LA LIGA 2022:2023.xls")
+> View(ESTADISTICAS_LA_LIGA_2022_2023)                                         
+> dataframe <- data.frame(Goals_Conceded = c(42, 33, 43, 45, 67, 53, 69, 53, 45, 43, 54, 35, 20, 55, 53, 65, 41, 36, 40, 63), Partidos_jugados = c(38, 38, 38, 38, 38, 38, 38, 38, 38, 38, 38, 38, 38, 38, 38, 38, 38, 38, 38, 38))
+> 
+> dataframe$Resultado <- dataframe$Goals_Conceded / dataframe$Partidos_jugados
+> print(dataframe)
+   Goals_Conceded Partidos_jugados Resultado
+1              42               38 1.1052632
+2              33               38 0.8684211
+3              43               38 1.1315789
+4              45               38 1.1842105
+5              67               38 1.7631579
+6              53               38 1.3947368
+7              69               38 1.8157895
+8              53               38 1.3947368
+9              45               38 1.1842105
+10             43               38 1.1315789
+11             54               38 1.4210526
+12             35               38 0.9210526
+13             20               38 0.5263158
+14             55               38 1.4473684
+15             53               38 1.3947368
+16             65               38 1.7105263
+17             41               38 1.0789474
+18             36               38 0.9473684
+19             40               38 1.0526316
+20             63               38 1.6578947
+> 
+> View(dataframe)
